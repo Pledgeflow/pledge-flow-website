@@ -137,10 +137,15 @@
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-xl">
-                    <form action="#" method="POST" class="space-y-4">
-                        <input type="text" placeholder="Your Name / Charity Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required>
-                        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required>
-                        <textarea placeholder="How can Pledge Flow help maximize your collections?" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required></textarea>
+                    <form action="https://formsubmit.co/pledgeflowoffice@gmail.com" method="POST" class="space-y-4">
+                        
+                        <input type="hidden" name="_subject" value="New Inquiry from Pledge Flow Website">
+                        <input type="hidden" name="_next" value="[YOUR LIVE WEBSITE LINK]/thank-you.html">
+
+                        <input type="text" name="name" placeholder="Your Name / Charity Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required>
+                        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required>
+                        <textarea name="message" placeholder="How can Pledge Flow help maximize your collections?" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required></textarea>
+                        
                         <button type="submit" class="w-full bg-brand-red text-white font-semibold p-3 rounded-md hover:bg-red-800 transition duration-150">
                             Send Inquiry
                         </button>
