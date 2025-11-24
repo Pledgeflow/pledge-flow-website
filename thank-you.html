@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Pledge Flow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ensures the page uses the full viewport height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#38761D',
+                        'brand-red': '#CC0000',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-md p-8 bg-white shadow-xl rounded-lg text-center border-t-8 border-brand-green">
+        <div class="text-5xl text-brand-green mb-4">✅</div>
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Inquiry Sent Successfully!</h1>
+        <p class="text-gray-600 mb-6">
+            Thank you for reaching out to Pledge Flow. We have received your message and will be in touch as quickly as possible.
+        </p>
+        <a href="index.html" class="inline-block bg-brand-red text-white font-semibold px-6 py-2 rounded-full hover:bg-red-800 transition duration-300">
+            Return to Homepage
+        </a>
+    </div>
+</body>
+</html>
