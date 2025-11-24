@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pledge Flow - Professional Fundraising Follow-up & Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define custom colors for easy branding */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-mint': '#A6E3E9',        /* Light Mint/Cyan */
+                        'brand-green': '#38761D',       /* Deep Money Green (Primary) */
+                        'brand-red': '#CC0000',         /* Classic Brand Red (Accent for urgency/action) */
+                        'bg-light': '#F8F8F8',          /* Off-White for background */
+                    },
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-bg-light font-sans">
+
+    <header class="bg-brand-green shadow-lg sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-white tracking-wider">
+                        Pledge <span class="text-brand-mint">Flow</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-white hover:text-brand-mint px-3 py-2 rounded-md text-sm font-medium transition duration-150">Home</a>
+                        <a href="#services" class="text-white hover:text-brand-mint px-3 py-2 rounded-md text-sm font-medium transition duration-150">Services</a>
+                        <a href="#contact" class="bg-brand-red text-white hover:bg-red-800 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Maximize Collections</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-brand-mint hover:text-white hover:bg-brand-red focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-white hover:text-brand-mint block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#services" class="text-white hover:text-brand-mint block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#contact" class="bg-brand-red text-white hover:bg-red-800 block px-3 py-2 rounded-md text-base font-medium mt-1">Maximize Collections</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="py-20 md:py-32 text-center bg-brand-mint bg-opacity-70">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-green mb-4 leading-tight">
+                Professional pledge follow-up & collection services for fundraising campaigns 
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                We maximize the amount actually collected for each fundraising campaign, bringing the charity to its final destination.
+            </p>
+            <a href="#contact" class="inline-block bg-brand-green text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-xl hover:bg-green-800 transform hover:scale-105 transition duration-300 ease-in-out">
+                Start Collecting More
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-brand-green mb-12">
+                Our Pledge Collection Services
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-brand-green hover:shadow-2xl transition duration-300">
+                    <div class="text-3xl text-brand-red mb-3">💳</div> 
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Credit Card Monitoring</h3>
+                    <p class="text-gray-600">
+                        We track all pledges made by credit card and follow up on any declined or expired cards, ensuring no revenue is lost due to payment issues.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-brand-green hover:shadow-2xl transition duration-300">
+                    <div class="text-3xl text-brand-red mb-3">📅</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Payment Plans</h3>
+                    <p class="text-gray-600">
+                        We create and oversee custom payment plans for donors who wish to pay in installments, ensuring timely and complete payments for the charity.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-brand-green hover:shadow-2xl transition duration-300">
+                    <div class="text-3xl text-brand-red mb-3">🗣️</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Driver Follow-Ups</h3>
+                    <p class="text-gray-600">
+                        After each campaign, we contact every driver to review the pledges they secured, ensuring all those promised donations are followed up and fulfilled.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block border-2 border-brand-red text-brand-red font-semibold px-6 py-2 rounded-full hover:bg-brand-red hover:text-white transition duration-300">
+                    Secure Your Collections Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-brand-green text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-brand-mint mb-12">
+                Ready to Secure Your Funds? Contact Pledge Flow
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-brand-mint">Get in Touch</h3>
+                    <p class="flex items-center">
+                        <span class="text-brand-red mr-3">📧</span> <a href="mailto:pledgeflowoffice@gmail.com" class="hover:text-brand-mint transition">pledgeflowoffice@gmail.com</a>
+                    </p>
+                    <p class="flex items-center">
+                        <span class="text-brand-red mr-3">📞</span> <a href="tel:+17185242920" class="hover:text-brand-mint transition">718-524-2920</a>
+                    </p>
+                    <p class="flex items-start">
+                        <span class="text-brand-red mr-3">📍</span> Main Office: Brooklyn, NY
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-xl">
+                    <form action="#" method="POST" class="space-y-4">
+                        <input type="text" placeholder="Your Name / Charity Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required>
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required>
+                        <textarea placeholder="How can Pledge Flow help maximize your collections?" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand-green focus:border-brand-green" required></textarea>
+                        <button type="submit" class="w-full bg-brand-red text-white font-semibold p-3 rounded-md hover:bg-red-800 transition duration-150">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-400">
+            &copy; 2025 Pledge Flow. All rights reserved. | Maximizing Fundraising Success
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            var expanded = this.getAttribute('aria-expanded') === 'true' || false;
+            this.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
